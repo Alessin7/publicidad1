@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Sugerencias</title>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: DarkSlateGray;
+}
+
+header {
+    background-color: MidnightBlue;
+    color: white; 
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: white;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: DodgerBlue; 
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.1em;
+    color: SlateGray;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid LightGray;
+    font-size: 1em;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.btn {
+    background-color: MediumSeaGreen;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: SeaGreen;
+}
+
+.footer {
+    background-color: MidnightBlue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+<style type="text/css">
+.grande { font-size: 60px; }
+</style>
+<script>
+// Escribir aqui el código Javascript
+</script>
+</head>
+<body>
+
+    <header>
+        <h1>Formulario de Sugerencias</h1>
+        <p>Queremos saber tu opinión para mejorar nuestro servicio</p>
+    </header>
+
+    <section>
+        <h2>Registra tu Sugerencia</h2>
+        <form action="#" method="post" id="form-sugerencias">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required="">
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required="">
+
+            <label for="sugerencia">Sugerencia:</label>
+            <textarea id="sugerencia" name="sugerencia" required=""></textarea>
+
+            <button type="submit" class="btn">Enviar Sugerencia</button>
+        </form>
+    </section>
+
+    <script>
+        document.getElementById('form-sugerencias').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Gracias por tu sugerencia. Nos ayuda a mejorar.');
+            document.getElementById('form-sugerencias').reset();
+        });
+    </script>
+
+
+
+
+</body></html>

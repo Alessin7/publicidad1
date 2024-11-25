@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Computadoras</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: blue;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: DodgerBlue;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-item {
+    background-color: LightGray;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 280px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-item h3 {
+    color: RoyalBlue;
+}
+
+.product-item p {
+    color: SlateGray;
+    font-size: 1em;
+}
+
+.price {
+    font-size: 1.5em;
+    color: Tomato;
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: MediumSeaGreen;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: SeaGreen;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+
+    </style>
+<style type="text/css">
+.grande { font-size: 60px; }
+</style>
+<script>
+// Escribir aqui el código Javascript
+</script>
+</head>
+<body>
+    <header>
+        <h1>Venta de Computadoras</h1>
+        <p>Encuentra la computadora que mejor se adapte a tus necesidades</p>
+    </header>
+
+    <section>
+        <h2>Nuestros Productos</h2>
+
+        <div class="product">
+            <div class="product-item">
+                <img src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaPE/113684367_01/w=1500,h=1500,fit=pad">
+                <h3>Computadora de Escritorio</h3>
+                <p>Perfecta para oficina o trabajo en casa. Procesador rápido, gran capacidad de almacenamiento y buena conectividad.</p>
+                <p class="price">S/ 2,500</p>
+                <button class="btn" onclick="agregarAlCarrito('Computadora de Escritorio', 2500)">Comprar</button>
+            </div>
+
+            <div class="product-item">
+                <img src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaPE/883258669_001/w=1500,h=1500,fit=pad">
+                <h3>Laptop Gaming</h3>
+                <p>Para los amantes de los videojuegos. Con gráficos de alta calidad y un procesador potente para rendir al máximo.</p>
+                <p class="price">S/ 4,500</p>
+                <button class="btn" onclick="agregarAlCarrito('Laptop Gaming', 4500)">Comprar</button>
+            </div>
+
+            <div class="product-item">
+                <img src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaPE/133615679_01/w=1500,h=1500,fit=pad">
+                <h3>PC All-in-One</h3>
+                <p>Todo en uno, ideal para espacios pequeños. Gran pantalla táctil y excelente rendimiento para tareas diarias.</p>
+                <p class="price">S/ 3,000</p>
+                <button class="btn" onclick="agregarAlCarrito('PC All-in-One', 3000)">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function agregarAlCarrito(nombreProducto, precio) {
+            alert("Has agregado " + nombreProducto + " al carrito. Precio: S/ " + precio);
+        }
+    </script>
+
+
+
+</body></html>
